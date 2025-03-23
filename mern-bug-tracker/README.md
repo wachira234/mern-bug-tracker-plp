@@ -39,7 +39,7 @@ Before setting up the project, ensure you have:
 
 - **Node.js**: Version 20.17.0 or higher (download from nodejs.org).
 - **npm**: Comes with Node.js (verify with `npm -v`).
-- **MongoDB Atlas Account**: For cloud database access (your URI: `mongodb+srv://washira:washira@mernstackweek6.hda04.mongodb.net/`).
+- **MongoDB Atlas Account**: For cloud database access 
 - **Git**: For cloning the repository (optional).
 - **Text Editor**: VS Code or similar recommended.
 
@@ -62,7 +62,7 @@ Before setting up the project, ensure you have:
 3. Set Up Environment Variables (Optional but Recommended):
    Create a `.env` file in `backend/`:
    ```plaintext
-   MONGO_URI=mongodb+srv://washira:washira@mernstackweek6.hda04.mongodb.net/bug-tracker?retryWrites=true&w=majority
+   MONGO_URI=mongodb+srv://@mernstackweek6.hda04.mongodb.net/bug-tracker?retryWrites=true&w=majority
    PORT=5000
    ```
    Update `server.js` to use dotenv:
@@ -70,7 +70,7 @@ Before setting up the project, ensure you have:
    require("dotenv").config();
    const mongoURI =
      process.env.MONGO_URI ||
-     "mongodb+srv://washira:washira@mernstackweek6.hda04.mongodb.net/bug-tracker?retryWrites=true&w=majority";
+     "mongodb+srv://@mernstackweek6.hda04.mongodb.net/bug-tracker?retryWrites=true&w=majority";
    const PORT = process.env.PORT || 5000;
    ```
 
